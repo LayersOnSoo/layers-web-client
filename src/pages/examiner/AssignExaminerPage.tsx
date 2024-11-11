@@ -209,7 +209,7 @@ const AssignExaminerPage = () => {
         >
           <div className="flex flex-col z-20 gap-4">
             <h3 className="text-xl font-semibold text-gray-800">
-              Edit Examiner
+              Edit Examiner Assignment
             </h3>
             <form className="space-y-4">
               {/* Select Examiner */}

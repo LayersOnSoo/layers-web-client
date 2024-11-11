@@ -137,26 +137,36 @@ const ExaminerListPage = () => {
         <div className="flex flex-col gap-4">
           {modalState.type === "delete" && selectedExaminer ? (
             <>
-              <h3 className="text-xl text-center font-semibold text-gray-800">
-                Delete Examiner
-              </h3>
-              <p className="text-gray-600 text-center">
-                Are you sure you want to delete this examiner?
-              </p>
-              <div className="flex px-9 justify-start items-start flex-col">
-                <p className="text-sm">
-                  User Id: <strong>{selectedExaminer.id}</strong>
+              <>
+                <h3 className="text-2xl font-semibold text-gray-800 text-center mb-4">
+                  Delete Examiner
+                </h3>
+                <p className="text-gray-600 text-center mb-6">
+                  Are you sure you want to delete this examiner ?
                 </p>
-                <p className="text-sm">
-                  Name:{" "}
-                  <strong>
-                    {selectedExaminer.firstname} {selectedExaminer.lastname}
-                  </strong>
-                </p>
-                <p className="text-sm">
-                  Email: <strong>{selectedExaminer.email}</strong>
-                </p>
-              </div>
+
+                <div className="px-6 py-4 bg-gray-50 rounded-lg shadow-md">
+                  <div className="space-y-4">
+                    <p className="text-sm text-gray-700">
+                      <span className="font-medium text-gray-900">
+                        User ID:
+                      </span>{" "}
+                      <strong>{selectedExaminer.id}</strong>
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      <span className="font-medium text-gray-900">Email:</span>{" "}
+                      <strong>{selectedExaminer.email}</strong>
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      <span className="font-medium text-gray-900">Name:</span>{" "}
+                      <strong>
+                        {" "}
+                        {selectedExaminer.firstname} {selectedExaminer.lastname}
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </>
             </>
           ) : (
             formData && (
