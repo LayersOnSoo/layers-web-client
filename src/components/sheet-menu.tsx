@@ -29,8 +29,7 @@ export function SheetMenu() {
             asChild
           >
             <Link to="/" className="flex items-center gap-2">
-              <Logo isOpen={false} />
-              <h1 className="text-lg font-bold">MaxFame</h1>
+              <Logo isOpen={true} />
             </Link>
           </Button>
         </SheetHeader>
