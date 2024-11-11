@@ -1,4 +1,5 @@
 import UiPageHeader from "@/components/UiPageHeader";
+import { ContentLayout } from "@/layout/contentLayout";
 import React, { useState } from "react";
 
 const AddExaminerPage = () => {
@@ -66,39 +67,41 @@ const AddExaminerPage = () => {
   };
 
   return (
-    <div className="flex flex-col w-full h-screen p-8 bg-gray-50 space-y-6">
-      <UiPageHeader
-        mainTitle="Examiner Management"
-        subTitle="Add New Examiner"
-      />
+    <ContentLayout>
+      <div className="flex flex-col w-full h-screen p-8 bg-gray-50 space-y-6">
+        <UiPageHeader
+          mainTitle="Examiner Management"
+          subTitle="Add New Examiner"
+        />
 
-      <form onSubmit={handleSubmit} className="space-y-4">
-        {fields.map((field) => (
-          <div key={field.name}>
-            <label className="block text-sm font-medium text-gray-700">
-              {field.label}
-            </label>
-            <input
-              type={field.type}
-              name={field.name}
-              value={formData[field.name as keyof FormData]}
-              onChange={handleChange}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-            />
-            {errors[field.name] && (
-              <p className="text-red-600 text-sm">{errors[field.name]}</p>
-            )}
-          </div>
-        ))}
+        <form onSubmit={handleSubmit} className="space-y-4">
+          {fields.map((field) => (
+            <div key={field.name}>
+              <label className="block text-sm font-medium text-gray-700">
+                {field.label}
+              </label>
+              <input
+                type={field.type}
+                name={field.name}
+                value={formData[field.name as keyof FormData]}
+                onChange={handleChange}
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+              />
+              {errors[field.name] && (
+                <p className="text-red-600 text-sm">{errors[field.name]}</p>
+              )}
+            </div>
+          ))}
 
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white rounded-md p-2 mt-4"
-        >
-          Add Examiner
-        </button>
-      </form>
-    </div>
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white rounded-md p-2 mt-4"
+          >
+            Add Examiner
+          </button>
+        </form>
+      </div>
+    </ContentLayout>
   );
 };
 
