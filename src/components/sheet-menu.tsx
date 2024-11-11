@@ -28,7 +28,7 @@ export function SheetMenu() {
             variant="link"
             asChild
           >
-            <Link to="/dashboard" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2">
               <Logo isOpen={false} />
               <h1 className="text-lg font-bold">MaxFame</h1>
             </Link>

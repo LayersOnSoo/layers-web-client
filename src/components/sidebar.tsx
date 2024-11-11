@@ -28,7 +28,7 @@ export function Sidebar() {
           variant="link"
           asChild
         >
-          <Link to="/dashboard" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Logo isOpen={sidebar?.isOpen} />
           </Link>
         </Button>
