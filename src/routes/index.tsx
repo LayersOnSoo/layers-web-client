@@ -1,7 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { routes } from "./routes";
 import { useState, useEffect, startTransition, Suspense } from "react";
-import { LoadingSpinner } from "../components/loader";
 const router = createBrowserRouter(routes);
 import AppLayout from "../AppLayout";
 
@@ -18,15 +17,11 @@ const AppRouter = () => {
     <AppLayout>
       <Suspense
         fallback={
-          <div className="flex items-center justify-center min-h-screen">
-            <LoadingSpinner />
-          </div>
+          <div className="flex items-center justify-center min-h-screen"></div>
         }
       >
         {isPending ? (
-          <div className="flex items-center justify-center min-h-screen">
-            <LoadingSpinner />
-          </div>
+          <div className="flex items-center justify-center min-h-screen"></div>
         ) : (
           <RouterProvider router={router} />
         )}
