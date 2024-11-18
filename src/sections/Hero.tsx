@@ -23,10 +23,13 @@ export default function Hero() {
           <Button
             size="sm"
             variant="primary"
-            className="whitespace-nowrap text-[20px] hover:bg-gradient-to-r from-lime-400 to-green-400 hover:border-transparent font-thin items-center"
+            className="whitespace-nowrap text-[22px] font-medium hover:bg-gradient-to-r from-lime-400 to-green-400 hover:border-transparent  items-center"
             type="submit"
           >
-            explore hackathon projects{" "}
+            <a href="https://github.com/SOON-Genesis-Project">
+              {" "}
+              explore hackathon projects{" "}
+            </a>
           </Button>
         </div>
       </div>

@@ -39,7 +39,9 @@ export default function Navbar() {
               variant="primary"
               className="border border-white/50 h-12 rounded-full font-medium px-6"
             >
-              Explore Projects
+              <a href="https://github.com/SOON-Genesis-Project">
+                Explore Projects
+              </a>
             </Button>
           </div>
 
