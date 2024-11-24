@@ -26,7 +26,7 @@ export default function Hero() {
             className="whitespace-nowrap text-[22px] font-medium hover:bg-gradient-to-r from-lime-400 to-green-400 hover:border-transparent  items-center"
             type="submit"
           >
-            <a href="https://github.com/SOON-Genesis-Project">
+            <a href="https://github.com/LayersOnSoo">
               {" "}
               explore hackathon projects{" "}
             </a>
