@@ -9,7 +9,11 @@ const FeatureCard = (props: {
 
   const navigate = useNavigate();
   const handleCardClick = () => {
-    navigate(repoUrl);
+    if (repoUrl.startsWith("http://") || repoUrl.startsWith("https://")) {
+      window.location.href = repoUrl;
+    } else {
+      navigate(repoUrl);
+    }
   };
   return (
     <div
