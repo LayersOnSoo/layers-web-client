@@ -16,7 +16,7 @@ const logos = [
 
 export default function LogoTicker() {
   return (
-    <section className="py-8 overflow-x-clip">
+    <section id="sponsors" className="py-8 overflow-x-clip">
       <div className="container">
         <h3 className="text-center text-white/50 text-xl">
           Sponsored by these market leaders

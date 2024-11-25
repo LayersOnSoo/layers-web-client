@@ -4,7 +4,7 @@ const text = `Welcome to LayersOnSoo, the hub for innovative projects on the SOO
 
 export default function Introduction() {
   return (
-    <section className="py-28 lg:py-40">
+    <section id="introduction" className="py-28 lg:py-40">
       <div className="container">
         <div className="flex justify-center">
           <Tag>Introducing Layers</Tag>

@@ -23,7 +23,7 @@ const northFundContractDesc = `The NorthFund smart contract on the soon blockcha
 
 export default function Features() {
   return (
-    <section className="py-24">
+    <section id="projects" className="py-24">
       <div className="container">
         <div className="flex justify-center">
           <Tag>Projects</Tag>

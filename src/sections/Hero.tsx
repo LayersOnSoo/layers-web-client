@@ -2,7 +2,7 @@ import Button from "@/components/button";
 
 export default function Hero() {
   return (
-    <section className="py-24">
+    <section id="home" className="py-24">
       <div className="container">
         <div className="flex justify-center">
           <div className="inline-flex py-1  px-3 bg-gradient-to-r from-green-400 to-lime-400 rounded-full text-neutral-900 ">
