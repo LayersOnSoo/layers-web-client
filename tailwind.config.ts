@@ -19,7 +19,7 @@ const config = {
       },
     },
     fontFamily: {
-      sans: ["var(--font-inter)", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
       mono: ["ui-monospace", "SFMono-Regular"],
     },
     screens: {

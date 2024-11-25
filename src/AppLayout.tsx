@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 const AppLayout = ({ children }) => {
   return (
     <>
-      <body className={` font-mono antialiased bg-black text-white `}>
+      <body className={` font-poppins antialiased bg-black text-white `}>
         <ToastContainer pauseOnHover theme="colored" />
         {children}
       </body>
