@@ -10,8 +10,8 @@ export default function Introduction() {
           <Tag>Introducing Layers</Tag>
         </div>
         <div className="text-4xl md:text-6xl text-center font-medium mt-10">
-          <span> Building On The SooNetwork.</span>{" "}
-          <span className="text-white/15">{text}</span>
+          <span> Building On SooNetwork.</span>{" "}
+          <span className="text-white/30">{text}</span>
           <span className="text-lime-400 block">
             That's why we built Layers
           </span>
