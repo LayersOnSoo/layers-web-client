@@ -17,7 +17,7 @@ const FeatureCard = (props: {
   };
   return (
     <div
-      className="p-6 bg-neutral-900 border rounded-3xl border-white/10"
+      className="p-6 cursor-pointer bg-neutral-900 border rounded-3xl border-white/10"
       onClick={handleCardClick}
     >
       <div className="flex items-center justify-center ">
