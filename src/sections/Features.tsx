@@ -15,7 +15,7 @@ const soonSwapDesc =
   "SoonSwap is a decentralized exchange (DEX) on the SOON blockchain, offering fast, secure token trading with low fees and high efficiency. Built on OpenBook V2, it features a user-friendly interface and strong liquidity to support a thriving DeFi ecosystem on SOON.";
 
 const soonIdDesc =
-  "This module analyzes the on-chain footprint of an address on the SOON network to derive a credibility score based on various criteria such as transaction history, token balances, smart contract interactions, and staking activities.";
+  "This module analyzes the on-chain footprint of an address on the SOON network to derive a credibility score built with various criteria such as transaction history, token balances, smart contract interactions, and staking activities.";
 
 const northfundClientDesc = `NorthFund is a platform that empowers students with financial needs by connecting them with global supporters through decentralized crowdfunding. Using the soon network, NorthFund provides a secure, transparent, and fast way for students to raise funds and achieve their educational goals.`;
 
@@ -29,11 +29,11 @@ export default function Features() {
           <Tag>Projects</Tag>
         </div>
         <h2 className="text-6xl font-medium text-center mt-6">
-          Our Projects are based on{" "}
+          Our Projects are built with{" "}
           <span className="text-lime-400">
             frontend, backend and blockchain technologies{" "}
           </span>{" "}
-          , all built on SooNetwork.
+          , all on <br /> SooNetwork.
         </h2>
         <div className=" mt-12  grid md:grid-cols-2 grid-cols-1 gap-8 ">
           <FeatureCard
